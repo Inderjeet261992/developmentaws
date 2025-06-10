@@ -6,12 +6,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("/api")
 public class TestingController {
 
-
-	@GetMapping("/")
-	public String home() {
-	    return "HOME OK";
+	    @GetMapping("/hello")
+	    public String sayHello() {
+	        return "Hello, World!";
+	    }
 	}
-	
-}
