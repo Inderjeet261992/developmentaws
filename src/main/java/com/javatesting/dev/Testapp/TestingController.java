@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestingController {
 
 
-	    @GetMapping("/hello")
-	    public String sayHello() {
-	        return "Hello, World!";
-	    }
+	@GetMapping("/")
+	public String home() {
+	    return "HOME OK";
+	}
 	
 }
